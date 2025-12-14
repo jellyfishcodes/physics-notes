@@ -163,9 +163,9 @@ ol.number-list li {
     position: relative; /* Needed for icon alignment */
 }
 
-/* This adds the "Triangle !" icon */
+/* This adds the "Pen" icon */
 .exam-tip .box-heading::before {
-    content: "\f071"; /* Unicode for Exclamation Triangle */
+    content: "\f040"; /* Unicode for Pen */
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     margin-right: 8px;
