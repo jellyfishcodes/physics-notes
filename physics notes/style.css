@@ -1,0 +1,278 @@
+/* =========================================
+   1. GLOBAL RESET & TYPOGRAPHY
+   HYBRID VERSION: Inter Font + Blue/Green Theme
+   ========================================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif; /* V2 Font */
+    color: #333333; /* Standard Dark Grey for better readability */
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+.webpage {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.demo-section {
+    margin-bottom: 40px;
+}
+
+.text-center { text-align: center; }
+
+/* =========================================
+   2. TYPOGRAPHY SYSTEM (Blue/Green Theme)
+   ========================================= */
+
+/* H1: Blue with Thick Green Underline */
+.h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2F80ED; /* Bright Blue */
+    border-bottom: 4px solid #00E676; /* Bright Green */
+    width: fit-content;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* H2: Blue with Thin Green Underline */
+.h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2F80ED;
+    border-bottom: 3px solid #00E676;
+    width: fit-content;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+/* H3: Blue Text Only */
+.h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2F80ED;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.body {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.small {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+/* Yellow Highlights */
+.highlight {
+    background-color: #FDE68A; /* Pastel Yellow */
+    padding: 2px 6px;
+    border-radius: 4px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+/* =========================================
+   3. DIAGRAMS
+   ========================================= */
+
+   .diagram {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+/* =========================================
+   4. LISTS
+   ========================================= */
+
+ul.simple-bullets {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+    margin-bottom: 16px;
+}
+
+ul.simple-bullets li {
+    font-family: 'Inter', sans-serif;
+    color: #4B5563; /* Softer Grey */
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+ol.number-list {
+    margin-left: 20px;
+    padding-left: 0;
+    margin-bottom: 16px;
+}
+
+ol.number-list li {
+    font-family: 'Inter', sans-serif;
+    color: #4B5563;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* =========================================
+   5. BOXES (V1 Colored Styles)
+   ========================================= */
+
+/* Definition Box / Note (Blue) */
+.definition-box {
+    background-color: #E0F2FE; /* Light Blue BG */
+    color: #0c4a6e;
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 5px solid #38BDF8; /* Blue Accent */
+    margin-bottom: 16px;
+    position: relative; /* Needed for icon alignment */
+}
+
+/* This adds the "i" icon automatically */
+.definition-box .box-heading::before {
+    content: "\f05a"; /* Unicode for Info Circle */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 8px;
+    color: #0288D1;
+}
+
+/* Exam Tip / Important (Purple) */
+.exam-tip {
+    background-color: #F3E8FF; /* Light Purple BG */
+    color: #581c87;
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 5px solid #9333EA; /* Purple Accent */
+    margin-bottom: 16px;
+    position: relative; /* Needed for icon alignment */
+}
+
+/* This adds the "Triangle !" icon */
+.exam-tip .box-heading::before {
+    content: "\f071"; /* Unicode for Exclamation Triangle */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 8px;
+    color: #9333EA;
+}
+
+/* Key Point / Example (Green) */
+.key-point {
+    background-color: #DCFCE7; /* Light Green BG */
+    color: #14532d;
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 5px solid #00E676; /* Green Accent */
+    margin-bottom: 16px;
+    position: relative; /* Needed for icon alignment */
+}
+
+/* This adds the "Lightbulb" icon */
+.key-point .box-heading::before {
+    content: "\f0eb"; /* Unicode for Lightbulb */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 8px;
+    color: #16A34A;
+}
+
+/* =========================================
+   6. EQUATIONS & TABLES
+   ========================================= */
+
+.equation {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2rem;
+}
+
+.equation-LHS {
+    color: #333;
+}
+
+.equation-RHS {
+    color: #2F80ED; /* Blue Math */
+}
+
+.fraction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.numerator {
+    border-bottom: 2px solid #2F80ED;
+    padding: 0 5px 2px 5px;
+    text-align: center;
+}
+
+.denominator {
+    padding: 2px 5px 0 5px;
+    text-align: center;
+}
+
+.formula {
+    font-family: 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+th {
+    text-align: left;
+    color: #2F80ED; /* Blue Headers */
+    font-weight: 700;
+    padding: 10px 8px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+td {
+    padding: 12px 8px;
+    color: #333;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: top;
+}
+
+blockquote {
+    border-left: 4px solid #333;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-style: italic;
+    background-color: #f9fafb;
+    color: #1f2937;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e5e7eb;
+    margin: 40px 0;
+}

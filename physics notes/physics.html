@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Notes - Resistance & Capacitance</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
+</head>
+<body>
+
+    <div class="webpage">
+
+        <!-- ==========================
+             PAGE 1: RESISTANCE
+        =========================== -->
+        <div class="demo-section">
+            <h1 class="h1">Resistance</h1>
+
+            <p class="body">The <strong>resistance</strong> of a conductor is the ratio of the potential difference across it to the current flowing through it i.e.</p>
+
+            <div class="definition-box">
+                <strong>Formula:</strong><br>
+                <div class="equation">
+                    <div class="equation-LHS">R = </div>
+                    <div class="equation-RHS fraction">
+                        <div class="numerator">V</div>
+                        <div class="denominator">I</div>
+                    </div>
+                </div>
+                <p class="body">
+                    R = resistance (Ω)<br>
+                    V = potential difference (v)<br>
+                    I = current (A)
+                </p>
+            </div>
+
+            <h2 class="h2">The OHM (Ω)</h2>
+            <p class="body">A conductor has a resistance of 1 ohm, if the current flowing through it is 1 ampere when the potential difference across it is 1 volt.</p>
+
+            <h2 class="h2">Ohm's Law</h2>
+            <p class="body">For some conductors (mainly metals), the resistance remains constant as the voltage and current changes. These are called <span class="highlight">ohmic conductors</span> as they follow Ohm's Law.</p>
+            
+            <div class="definition-box">
+                <strong>Ohm's Law</strong> states that, for certain conductors at constant temperature, the current is <span class="highlight">directly proportional</span> to the voltage.
+            </div>
+
+            <!-- Placeholder for Graph Image -->
+            <img src="images/graph_ohm.png" alt="Graph of V vs I" class="diagram">
+
+            <div class="key-point">
+                <strong>Derivation:</strong><br>
+                ∵ I ∝ V<br>
+                ∴ IR = V  →  V = IR
+            </div>
+
+            <h3 class="h3">The Ohmmeter</h3>
+            <p class="body">An <span class="highlight">ohmmeter</span> is used to measure resistance. It is connected across the conductor it is measuring R for.</p>
+            <!-- Placeholder for Multimeter Image -->
+            <img src="images/ohmmeter.png" alt="Ohmmeter Diagram" class="diagram">
+        </div>
+
+        <!-- ==========================
+             PAGE 2: CIRCUITS
+        =========================== -->
+        <div class="demo-section">
+            <h1 class="h1">Resistance in Circuit</h1>
+
+            <h3 class="h3">Resistors in SERIES:</h3>
+            <!-- Placeholder for Series Diagram -->
+            <img src="images/series.png" alt="Resistors in Series" class="diagram">
+
+            <div class="definition-box">
+                <strong>Formula:</strong> R<sub>total</sub> = R1 + R2 + R3 + ....
+            </div>
+
+            <ul class="simple-bullets">
+                <li>Derivation: Vt = V1 + V2 + V3</li>
+                <li>Since V=IR : I<sub>t</sub>R<sub>t</sub> = I<sub>1</sub>R<sub>1</sub> + I<sub>2</sub>R<sub>2</sub> + I<sub>3</sub>R<sub>3</sub></li>
+                <li>Divide by I : R<sub>T</sub> = R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub></li>
+            </ul>
+
+            <h3 class="h3">Resistors in PARALLEL:</h3>
+            <!-- Placeholder for Parallel Diagram -->
+            <img src="images/parallel.png" alt="Resistors in Parallel" class="diagram">
+
+            <div class="equation">
+                <div class="equation-RHS fraction">
+                    <div class="numerator">1</div>
+                    <div class="denominator">R<sub>total</sub></div>
+                </div>
+                <div> = </div>
+                <div class="equation-RHS fraction">
+                    <div class="numerator">1</div>
+                    <div class="denominator">R<sub>1</sub></div>
+                </div>
+                <div> + </div>
+                <div class="equation-RHS fraction">
+                    <div class="numerator">1</div>
+                    <div class="denominator">R<sub>2</sub></div>
+                </div>
+                <div> + ...</div>
+            </div>
+
+            <h2 class="h2">Resistivity</h2>
+            <p class="body">The resistivity of a material combines all the factors affect resistance to give a value for how resistive it is.</p>
+
+            <div class="definition-box">
+                <strong>Formula:</strong>
+                <div class="equation">
+                    <div class="equation-LHS">ρ = </div>
+                    <div class="equation-RHS fraction">
+                        <div class="numerator">RA</div>
+                        <div class="denominator">l</div>
+                    </div>
+                </div>
+                <p class="body">
+                    ρ = Resistivity (Ωm)<br>
+                    R = Resistance (Ω)<br>
+                    A = Cross-sectional Area (m²)<br>
+                    l = Length (m)
+                </p>
+            </div>
+
+            <p class="body"><strong>Factors that affect resistance:</strong></p>
+            <ol class="number-list">
+                <li>Cross-sectional area (decreases resistance)</li>
+                <li>Length (increases resistance)</li>
+                <li>Material (what is conductor made of?)</li>
+                <li>Temperature</li>
+            </ol>
+        </div>
+
+        <!-- ==========================
+             PAGE 3: CALCULATIONS & TEMP
+        =========================== -->
+        <div class="demo-section">
+            
+            <div class="exam-tip">
+                <strong>Example Question:</strong><br>
+                A 5m long copper wire of 0.35mm diameter has resistivity of 1.69x10<sup>-8</sup>. Calculate its resistance.
+                <hr>
+                <strong>Solution:</strong><br>
+                l = 5<br>
+                A = πr² = (0.35 x 10<sup>-3</sup> / 2)² π<br>
+                <br>
+                <div class="equation">
+                    1.69 x 10<sup>-8</sup> = 
+                    <div class="equation-RHS fraction">
+                        <div class="numerator">R(9.62 x 10<sup>-8</sup>)</div>
+                        <div class="denominator">5</div>
+                    </div>
+                </div>
+                <br>
+                R = 0.878 Ω
+            </div>
+
+            <h2 class="h2">Temperature and Resistance</h2>
+            
+            <h3 class="h3">Metallic Conductor</h3>
+            <p class="body">Resistance increases <span class="highlight">linearly</span> with temperature.</p>
+            <p class="small">Metals are good conductors as they have many closely packed atoms. However, when they are heated, many electrons become thermally excited and are released and they begin to collide with each other.</p>
+            <!-- Placeholder for Metal Graph -->
+            <img src="images/graph_metal.png" alt="Metal Graph" class="diagram">
+
+            <h3 class="h3">Thermistor</h3>
+            <p class="body">A semiconductor whose resistance <span class="highlight">decreases rapidly</span> as temperature increases.</p>
+            <p class="small">Thermistors have minimal amounts of electrons available for conduction. It is an insulator at low temperatures.</p>
+            <!-- Placeholder for Thermistor Graph -->
+            <img src="images/graph_thermistor.png" alt="Thermistor Graph" class="diagram">
+
+            <div class="key-point">
+                <strong>Variable Resistors</strong>
+                <ul class="simple-bullets">
+                    <li>Fixed/practical resistors have a set resistance which can't be changed.</li>
+                    <li>Variable resistors can be adjusted, e.g. rheostat.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ==========================
+             PAGE 4: WHEATSTONE
+        =========================== -->
+        <div class="demo-section">
+            <h1 class="h1">Wheatstone Bridge</h1>
+            <p class="body">Wheatstone bridge is a circuit to measure resistance.</p>
+            
+            <!-- Placeholder for Wheatstone Diagram -->
+            <img src="images/wheatstone.png" alt="Wheatstone Bridge" class="diagram">
+
+            <div class="key-point">
+                <strong>Balanced Bridge Conditions:</strong>
+                <ul class="simple-bullets">
+                    <li>When no current flows in galvanometer, the bridge is said to be balanced.</li>
+                    <li>V<sub>BD</sub> = 0</li>
+                    <li>
+                        <div class="equation">
+                            <div class="equation-RHS fraction">
+                                <div class="numerator">R<sub>1</sub></div>
+                                <div class="denominator">R<sub>2</sub></div>
+                            </div>
+                            <div> = </div>
+                            <div class="equation-RHS fraction">
+                                <div class="numerator">R<sub>3</sub></div>
+                                <div class="denominator">R<sub>4</sub></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <h3 class="h3">Metre Bridge</h3>
+            <p class="small">(Form of Wheatstone bridge)</p>
+            <!-- Placeholder for Metre Bridge Diagram -->
+            <img src="images/metre_bridge.png" alt="Metre Bridge" class="diagram">
+
+            <p class="body"><strong>Uses:</strong></p>
+            <ul class="simple-bullets">
+                <li>Fail-safe device: if it becomes unbalanced, switch something off.</li>
+                <li>Temperature control: resistance can change due to temp so becomes unbalanced.</li>
+            </ul>
+
+            <h2 class="h2">Potential Divider Circuit</h2>
+            <div class="definition-box">
+                <strong>Formula:</strong> V = IR
+            </div>
+            <!-- Placeholder for Potential Divider Diagram -->
+            <img src="images/potential_divider.png" alt="Potential Divider" class="diagram">
+            <ul class="simple-bullets">
+                <li>Use a resistor with a sliding contact so that resistor can be changed.</li>
+                <li>As we change resistance of a variable resistor, the resistance in circuit changes.</li>
+                <li>This changes output voltage.</li>
+            </ul>
+        </div>
+
+        <!-- ==========================
+             PAGE 5: CAPACITANCE
+        =========================== -->
+        <div class="demo-section">
+            <h1 class="h1">Capacitance</h1>
+            <p class="body">A <span class="highlight">capacitor</span> is a device capable of storing an <span class="highlight">electrical charge</span>. It will hold the electrical charge until required.</p>
+            
+            <div class="definition-box">
+                <strong>Capacitance</strong> is the amount of charge a capacitor is capable of holding.<br>
+                <br>
+                <strong>Formula:</strong> Q = CV<br>
+                Q = charge, C = capacitor, V = voltage.<br>
+                Unit = farad (F)
+            </div>
+
+            <div class="exam-tip">
+                <strong>Example Question:</strong><br>
+                What is the charge on a 600 pF capacitor when it has a potential difference of 2KV?<br>
+                <br>
+                <strong>Solution:</strong><br>
+                Q = (600 x 10<sup>-12</sup>) (2 x 10<sup>3</sup>) = 1.2 x 10<sup>-6</sup> C
+            </div>
+
+            <h2 class="h2">Changing Capacitance</h2>
+            <ul class="simple-bullets">
+                <li>Bring an oppositely charged charge near a conductor. The conductor will attract the charge... <span class="highlight">This increases capacitance.</span></li>
+                <li>Bring a similarly charged charge near a conductor... <span class="highlight">This decreases capacitance.</span></li>
+            </ul>
+
+            <h3 class="h3">Electrolytic Capacitor</h3>
+            <ul class="simple-bullets">
+                <li>An electrolytic capacitor has two plates separated by a dielectric material and is rolled up.</li>
+                <li>A dielectric is a non-conductive material, e.g. paper, ceramic.</li>
+            </ul>
+            <!-- Placeholder for Rolled Capacitor Diagram -->
+            <img src="images/capacitor_roll.png" alt="Electrolytic Capacitor" class="diagram">
+        </div>
+
+        <!-- ==========================
+             PAGE 6: PARALLEL PLATE
+        =========================== -->
+        <div class="demo-section">
+            <h2 class="h2">Parallel Plate Capacitor</h2>
+            <p class="body">These have two plates separated by a dielectric material.</p>
+            
+            <!-- Placeholder for Parallel Plate Diagram -->
+            <img src="images/parallel_plate.png" alt="Parallel Plate Capacitor" class="diagram">
+
+            <div class="definition-box">
+                <strong>Formula:</strong>
+                <div class="equation">
+                    <div class="equation-LHS">C = </div>
+                    <div class="equation-RHS fraction">
+                        <div class="numerator">εA</div>
+                        <div class="denominator">d</div>
+                    </div>
+                </div>
+                ε = permittivity<br>
+                A = area of overlap<br>
+                d = distance between plates
+            </div>
+
+            <h2 class="h2">Application of Capacitors</h2>
+            <p class="body">A capacitor stores charge and can act as temporary battery. It can release its charge on demand.</p>
+            <div class="key-point">
+                <strong>Example: Camera Flash</strong><br>
+                You press a button to charge up the capacitor. A light comes on when it is fully charged. You press the button to take the picture and the capacitor discharges, releasing all of its charge.
+            </div>
+
+            <h2 class="h2">Energy Stored by a Capacitor</h2>
+            <div class="definition-box">
+                <strong>Formula:</strong>
+                <div class="equation">
+                    <div class="equation-LHS">W = </div>
+                    <div class="equation-RHS fraction">
+                        <div class="numerator">1</div>
+                        <div class="denominator">2</div>
+                    </div>
+                    <div>CV<sup>2</sup></div>
+                </div>
+            </div>
+
+            <div class="exam-tip">
+                <strong>Example Question:</strong><br>
+                A capacitor has a capacitance of 2.4μF. What is the charge on the plates if the energy stored is 23 mJ?<br>
+                <br>
+                <strong>Solution:</strong><br>
+                23 x 10<sup>-3</sup> = 1/2 (2.4 x 10<sup>-6</sup>) V<sup>2</sup><br>
+                V = 138.44 v<br>
+                Q = CV<br>
+                Q = (2.4 x 10<sup>-6</sup>)(138.44)<br>
+                Q = 3.32 x 10<sup>-4</sup> C
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
